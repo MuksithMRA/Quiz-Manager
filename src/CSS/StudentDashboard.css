@@ -1,0 +1,13 @@
+
+
+#lbl_Home:hover{
+    -fx-text-fill: #2196f3;
+}
+
+
+#btn_Home,
+#btn_Category,
+#btn_MyProfile,
+#btn_LeadBoard{
+    -fx-background-repeat: no-repeat;
+}

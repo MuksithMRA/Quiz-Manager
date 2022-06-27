@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="538.0" style="-fx-background-color: white;" styleClass="splash-bg"
+            stylesheets="@../../CSS/SplashScreen.css" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Authentication.C_SplashScreen">
+   <Label layoutX="154.0" layoutY="166.0" prefHeight="18.0" prefWidth="257.0"
+          text="National Institute of Business Management" textAlignment="CENTER"/>
+   <JFXButton fx:id="btn_Lecturer" layoutX="189.0" layoutY="244.0" mnemonicParsing="false"
+              onAction="#btn_LecturerOnAction" prefHeight="42.0" prefWidth="160.0"
+              style="-fx-background-color: #2196f3; -fx-text-fill: #ffffff;" text="Lecturer">
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </JFXButton>
+   <JFXButton fx:id="btn_Student" layoutX="364.0" layoutY="244.0" mnemonicParsing="false"
+              onAction="#btn_StudentOnAction" prefHeight="42.0" prefWidth="160.0"
+              style="-fx-background-color: #2196f3; -fx-text-fill: #ffffff;" text="Student">
+      <cursor>
+         <Cursor fx:constant="HAND"/>
+      </cursor>
+   </JFXButton>
+   <ImageView fitHeight="110.0" fitWidth="210.0" layoutX="172.0" layoutY="55.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@../../Assets/logo.png"/>
+   </ImageView>
+   <JFXButton fx:id="btn_Admin" layoutX="14.0" layoutY="244.0" onAction="#btn_AdminOnAction" prefHeight="42.0"
+              prefWidth="160.0" style="-fx-background-color: #2196f3; -fx-text-fill: #ffffff;" text="Administrator"/>
+</AnchorPane>
